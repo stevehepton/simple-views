@@ -1,0 +1,14 @@
+/* basic layout */
+
+body {
+  font-size: 120%;
+  font-family: sans-serif;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+  padding: 0.5em 0;
+  border-bottom: 2px solid;
+}
