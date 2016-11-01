@@ -12,3 +12,39 @@ nav {
   padding: 0.5em 0;
   border-bottom: 2px solid;
 }
+
+nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+/* view visibility logic and animation */
+
+main > * {
+  display: none;
+}
+
+main > *:last-child {
+  display: block;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.05)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+main > *:target {
+  display: block;
+  animation: pulse 0.5s linear 1;
+}
+
+main > *:target ~ * {
+  display: none;
+}
