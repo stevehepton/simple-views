@@ -28,6 +28,17 @@
     },
     // Start the app.
     'init': function() {
+      window.addEventListener('hashchange', function() {
+        app.viewChange();
+      });
+      // If there's no hash in the URL, change the URL to
+      // include the default view's hash
+      if (!window.location.hash) {
+        window.location.hash = app.default;
+      } else {
+        // Execute viewChange() for the first time
+        app.viewChange();
+      }
     }
   };
   window.app = app;
