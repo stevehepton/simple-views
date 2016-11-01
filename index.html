@@ -2,11 +2,30 @@
 <html>
 <head>
   <title>Simple views demo</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <nav role="navigation">
+  <ul>
+    <li><a href="#the-default-view">the default view</a></li>
+    <li><a href="#another-view">another view</a></li>
+    <li><a href="#yet-another-view">yet another view</a></li>
+  </ul>
 </nav>
-<main role="main">
+ <main role="main">
+  <div id="yet-another-view">
+    <h1>Yet another view</h1>
+    <p>This is one of any number of views that are reachable by linking to its <code>id</code> / hash identifier.</p>
+  </div>
+  <div id="another-view">
+    <h1>Another view</h1>
+    <p>This is one of any number of views that are reachable by linking to its <code>id</code> / hash identifier.</p>
+  </div>
+  <div id="the-default-view">
+    <h1>The default view</h1>
+    <p>This view is visible by default when the user first arrives at the app.</p>
+  </div>
 </main>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
