@@ -6,6 +6,7 @@ For example: page.html#foo to page.html#bar
 
 Browser support is widespread, see: http://caniuse.com/#feat=hashchange
 
-Specification, from the HTML Living Standard: https://html.spec.whatwg.org/multipage/browsers.html#the-hashchangeevent-interface
+Specification, from the HTML Living Standard:
+https://html.spec.whatwg.org/multipage/browsers.html#the-hashchangeevent-interface
 
 Very often the simple solutions are the best
